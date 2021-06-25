@@ -1,7 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import heroImageDesktop from "../images/desktop/image-hero.jpg";
-import heroImageMobile from "../images/mobile/image-hero.jpg";
+import React from 'react';
+import styled from 'styled-components';
+import heroImageDesktop from '../images/desktop/image-hero.jpg';
+import heroImageMobile from '../images/mobile/image-hero.jpg';
+
+import theme from '../theme';
+
+const { white, black, darkGray, veryDarkGray } = theme;
 
 const HeaderContainer = styled.div`
   width: 100vw;
@@ -15,46 +19,73 @@ const Hero = styled.div`
   background-size: cover;
   background-position: 50% 0;
 
+  /*   height: 100vh;
+  width: 100vw;
+  background-color: dodgerblue; */
+
   @media screen and (max-width: 375px) {
-    background-image: url(${heroImageMobile});
+    padding: 0 24px;
   }
-  @media screen and (min-width: 376px) and (max-width: 1023px) {
-    background-image: url(${heroImageDesktop});
+  @media screen and (min-width: 376px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(${heroImageDesktop});
   }
+
   @media screen and (min-width: 1024px) {
-    background-image: url(${heroImageDesktop});
     padding: 0 165px;
   }
 `;
 
 const Content = styled.div`
   margin: 0 auto;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1023px) {
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1024px) {
     max-width: 1110px;
   }
 `;
 
-const Nav = styled.div``;
-
-const NavBar = styled.div`
-  display: flex;
-  justify-content: space-between;
+const Nav = styled.div`
+  @media screen and (max-width: 1023px) {
+  }
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+  }
 `;
 
-const NavLogo = styled.div``;
+const NavBar = styled.div`
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+  }
+`;
+
+const NavLogo = styled.div`
+  @media screen and (max-width: 1023px) {
+  }
+`;
 
 const Burger = styled.div`
-  display: none;
-  @media screen and (max-width: 768px) {
-    display: block;
+  @media screen and (min-width: 1024px) {
+    display: none;
   }
 `;
 
 const NavMenu = styled.ul`
   list-style-type: none;
-  color: white;
+  color: ${white};
+  display: flex;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    width: 380px;
+  }
 `;
 
 const Header = () => {
@@ -91,12 +122,6 @@ const Header = () => {
           </Nav>
         </Content>
       </Hero>
-      <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quidem,
-        sequi ut quod accusamus perspiciatis voluptatem vero necessitatibus
-        blanditiis adipisci magni mollitia soluta architecto aliquid enim quae
-        et commodi a!
-      </div>
     </HeaderContainer>
   );
 };
