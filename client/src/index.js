@@ -1,10 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+import { MenuProvider } from "./context/MenuContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MenuProvider>
+      <App />
+    </MenuProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
