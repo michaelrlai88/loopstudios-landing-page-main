@@ -1,31 +1,27 @@
-import React, { useContext } from "react";
-import styled from "styled-components";
-import heroImageDesktop from "../images/desktop/image-hero.jpg";
-import heroImageMobile from "../images/mobile/image-hero.jpg";
-import navLogo from "../images/logo.svg";
+import React, { useContext } from 'react';
+import styled from 'styled-components';
+import heroImageDesktop from '../images/desktop/image-hero.jpg';
+import heroImageMobile from '../images/mobile/image-hero.jpg';
+import navLogo from '../images/logo.svg';
 
-import theme from "../theme";
+import theme from '../theme';
 
-import { MenuContext } from "../context/MenuContext";
+import { MenuContext } from '../context/MenuContext';
 
 const { white, black, darkGray, veryDarkGray } = theme;
 
 const HeaderContainer = styled.div`
   width: 100vw;
   height: 100%;
+  height: ${(props) => (props.menuOpen ? '0' : '650px')};
 `;
 
 const Hero = styled.div`
-  height: ${(props) => (props.menuOpen ? "0" : "650px")};
-  /* height: 650px; */
+  height: 100%;
   width: 100vw;
 
   background-size: cover;
   background-position: 50% 0;
-
-  /*   height: 100vh;
-  width: 100vw;
-  background-color: dodgerblue; */
 
   @media screen and (max-width: 375px) {
     background-image: url(${heroImageMobile});
@@ -72,6 +68,7 @@ const NavBar = styled.div`
 const NavLogo = styled.div`
   background-image: url(${navLogo});
   background-repeat: no-repeat;
+
   @media screen and (max-width: 767px) {
     height: 25px;
     width: 160px;
@@ -99,8 +96,13 @@ const Burger = styled.button`
 const NavMenu = styled.ul`
   list-style-type: none;
   color: ${white};
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
   @media screen and (max-width: 767px) {
-    display: ${(props) => (props.menuOpen ? "flex" : "none")};
+    display: ${(props) => (props.menuOpen ? 'flex' : 'none')};
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -112,7 +114,7 @@ const NavMenu = styled.ul`
     justify-content: center;
     padding-left: 24px;
     font-weight: 400;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 24px;
     font-weight: 100;
 
@@ -128,12 +130,27 @@ const NavMenu = styled.ul`
   }
 `;
 
+const HeroText = styled.div`
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  padding: 22px;
+  margin-top: 160px;
+  border: 2px solid white;
+  max-width: 650px;
+  @media screen and (min-width: 580px) {
+    margin-top: 125px;
+    font-size: 76px;
+    font-weight: 100;
+  }
+`;
+
 const Header = (props) => {
   const { menuOpen, setMenuOpen } = useContext(MenuContext);
 
   const openMenu = () => {
-    console.log(menuOpen);
-    console.log(typeof menuOpen);
     setMenuOpen(!menuOpen);
   };
 
@@ -153,13 +170,24 @@ const Header = (props) => {
               </Burger>
             </NavBar>
             <NavMenu menuOpen={menuOpen}>
-              <li>About</li>
-              <li>Careers</li>
-              <li>Events</li>
-              <li>Products</li>
-              <li>Support</li>
+              <li>
+                <a href='/'>About</a>
+              </li>
+              <li>
+                <a href='/'>Careers</a>
+              </li>
+              <li>
+                <a href='/'>Events</a>
+              </li>
+              <li>
+                <a href='/'>Products</a>
+              </li>
+              <li>
+                <a href='/'>Support</a>
+              </li>
             </NavMenu>
           </Nav>
+          <HeroText>Immersive experiences that deliver</HeroText>
         </Content>
       </Hero>
     </HeaderContainer>
