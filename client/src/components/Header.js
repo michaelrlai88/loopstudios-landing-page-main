@@ -147,7 +147,7 @@ const HeroText = styled.div`
   }
 `;
 
-const Header = (props) => {
+const Header = () => {
   const { menuOpen, setMenuOpen } = useContext(MenuContext);
 
   const openMenu = () => {
@@ -156,7 +156,7 @@ const Header = (props) => {
 
   return (
     <HeaderContainer menuOpen={menuOpen}>
-      <Hero menuOpen={menuOpen}>
+      <Hero>
         <Content>
           <Nav>
             <NavBar>
