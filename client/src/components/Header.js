@@ -159,7 +159,7 @@ const Header = () => {
       <Hero>
         <Content>
           <Nav>
-            <NavBar>
+            <NavBar menuOpen={menuOpen}>
               <NavLogo></NavLogo>
               <Burger onClick={openMenu}>
                 <svg width='24' height='16' xmlns='http://www.w3.org/2000/svg'>
