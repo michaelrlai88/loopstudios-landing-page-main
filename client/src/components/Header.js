@@ -57,10 +57,10 @@ const Nav = styled.div`
 
 const NavBar = styled.div`
   @media screen and (max-width: 767px) {
+    position: ${(props) => (props.menuOpen ? 'fixed' : 'relative')};
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
     z-index: 1;
   }
 `;
@@ -107,7 +107,6 @@ const NavMenu = styled.ul`
     width: 100vw;
     background-color: black;
     position: fixed;
-    overflow: hidden;
     top: 0;
     left: 0;
     z-index: 0;
