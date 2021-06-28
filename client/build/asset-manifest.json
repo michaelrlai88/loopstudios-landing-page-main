@@ -1,23 +1,27 @@
 {
   "files": {
     "main.css": "/loopstudios-landing-page-main/static/css/main.88374365.chunk.css",
-    "main.js": "/loopstudios-landing-page-main/static/js/main.f6f6d8db.chunk.js",
-    "main.js.map": "/loopstudios-landing-page-main/static/js/main.f6f6d8db.chunk.js.map",
+    "main.js": "/loopstudios-landing-page-main/static/js/main.ece9a563.chunk.js",
+    "main.js.map": "/loopstudios-landing-page-main/static/js/main.ece9a563.chunk.js.map",
     "runtime-main.js": "/loopstudios-landing-page-main/static/js/runtime-main.2b2a9222.js",
     "runtime-main.js.map": "/loopstudios-landing-page-main/static/js/runtime-main.2b2a9222.js.map",
-    "static/js/2.1376fc4e.chunk.js": "/loopstudios-landing-page-main/static/js/2.1376fc4e.chunk.js",
-    "static/js/2.1376fc4e.chunk.js.map": "/loopstudios-landing-page-main/static/js/2.1376fc4e.chunk.js.map",
+    "static/js/2.afa0c7bb.chunk.js": "/loopstudios-landing-page-main/static/js/2.afa0c7bb.chunk.js",
+    "static/js/2.afa0c7bb.chunk.js.map": "/loopstudios-landing-page-main/static/js/2.afa0c7bb.chunk.js.map",
     "index.html": "/loopstudios-landing-page-main/index.html",
     "static/css/main.88374365.chunk.css.map": "/loopstudios-landing-page-main/static/css/main.88374365.chunk.css.map",
-    "static/js/2.1376fc4e.chunk.js.LICENSE.txt": "/loopstudios-landing-page-main/static/js/2.1376fc4e.chunk.js.LICENSE.txt",
+    "static/js/2.afa0c7bb.chunk.js.LICENSE.txt": "/loopstudios-landing-page-main/static/js/2.afa0c7bb.chunk.js.LICENSE.txt",
+    "static/media/image-deep-earth.2a157951.jpg": "/loopstudios-landing-page-main/static/media/image-deep-earth.2a157951.jpg",
     "static/media/image-hero.3de81110.jpg": "/loopstudios-landing-page-main/static/media/image-hero.3de81110.jpg",
     "static/media/image-hero.9b5aacea.jpg": "/loopstudios-landing-page-main/static/media/image-hero.9b5aacea.jpg",
+    "static/media/image-interactive.1d330522.jpg": "/loopstudios-landing-page-main/static/media/image-interactive.1d330522.jpg",
+    "static/media/image-interactive.d6a3949b.jpg": "/loopstudios-landing-page-main/static/media/image-interactive.d6a3949b.jpg",
+    "static/media/image-night-arcade.a4f25d3b.jpg": "/loopstudios-landing-page-main/static/media/image-night-arcade.a4f25d3b.jpg",
     "static/media/logo.5b4e652a.svg": "/loopstudios-landing-page-main/static/media/logo.5b4e652a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2b2a9222.js",
-    "static/js/2.1376fc4e.chunk.js",
+    "static/js/2.afa0c7bb.chunk.js",
     "static/css/main.88374365.chunk.css",
-    "static/js/main.f6f6d8db.chunk.js"
+    "static/js/main.ece9a563.chunk.js"
   ]
 }
