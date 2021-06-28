@@ -48,6 +48,7 @@ const Content = styled.div`
 const Nav = styled.div`
   padding-top: 40px;
   @media screen and (min-width: 768px) {
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +58,6 @@ const Nav = styled.div`
 
 const NavBar = styled.div`
   @media screen and (max-width: 767px) {
-    position: ${(props) => (props.menuOpen ? 'fixed' : 'relative')};
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,6 +68,7 @@ const NavBar = styled.div`
 const NavLogo = styled.div`
   background-image: url(${navLogo});
   background-repeat: no-repeat;
+  z-index: 1;
 
   @media screen and (max-width: 767px) {
     height: 25px;
@@ -84,6 +85,7 @@ const NavLogo = styled.div`
 const Burger = styled.button`
   background: transparent;
   border: none;
+  z-index: 1;
 
   :hover {
     cursor: pointer;
@@ -158,10 +160,10 @@ const Header = () => {
     <HeaderContainer menuOpen={menuOpen}>
       <Hero>
         <Content>
-          <Nav>
+          <Nav menuOpen={menuOpen}>
             <NavBar menuOpen={menuOpen}>
-              <NavLogo></NavLogo>
-              <Burger onClick={openMenu}>
+              <NavLogo menuOpen={menuOpen}></NavLogo>
+              <Burger onClick={openMenu} menuOpen={menuOpen}>
                 <svg width='24' height='16' xmlns='http://www.w3.org/2000/svg'>
                   <g fill='#FFF' fill-rule='evenodd'>
                     <path d='M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z' />
