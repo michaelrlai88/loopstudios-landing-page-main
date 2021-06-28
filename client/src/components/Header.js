@@ -40,6 +40,7 @@ const Hero = styled.div`
 
 const Content = styled.div`
   margin: 0 auto;
+
   @media screen and (min-width: 1024px) {
     max-width: 1110px;
   }
@@ -47,8 +48,8 @@ const Content = styled.div`
 
 const Nav = styled.div`
   padding-top: 40px;
+
   @media screen and (min-width: 768px) {
-    z-index: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,18 +63,21 @@ const NavBar = styled.div`
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    position: ${(props) => (props.menuOpen ? 'fixed' : 'none')};
+    width: ${(props) => (props.menuOpen ? '100vw' : 'initial')};
+    left: ${(props) => (props.menuOpen ? '0' : 'initial')};
   }
 `;
 
 const NavLogo = styled.div`
   background-image: url(${navLogo});
   background-repeat: no-repeat;
-  z-index: 1;
 
   @media screen and (max-width: 767px) {
     height: 25px;
     width: 160px;
     background-size: 145px auto;
+    margin-left: ${(props) => (props.menuOpen ? '24px' : 'initial')};
   }
   @media screen and (min-width: 768px) {
     height: 35px;
@@ -85,7 +89,7 @@ const NavLogo = styled.div`
 const Burger = styled.button`
   background: transparent;
   border: none;
-  z-index: 1;
+  margin-right: ${(props) => (props.menuOpen ? '24px' : 'initial')};
 
   :hover {
     cursor: pointer;
