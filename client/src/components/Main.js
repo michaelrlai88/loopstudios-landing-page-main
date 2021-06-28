@@ -90,12 +90,15 @@ const Title = styled.div`
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 100;
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 30px;
   @media screen and (max-width: 1439px) {
     text-align: center;
     margin-bottom: 32px;
   }
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+  } ;
 `;
 
 const Para = styled.div`
@@ -107,7 +110,13 @@ const Para = styled.div`
   }
 `;
 
-const Creations = styled.div``;
+const Creations = styled.div`
+  @media screen and (max-width: 1439px) {
+    margin-bottom: 34px;
+  }
+`;
+
+const CreationsTitleContainer = styled.div``;
 
 const CreationsTitle = styled.div`
   text-align: center;
@@ -115,8 +124,11 @@ const CreationsTitle = styled.div`
   text-transform: uppercase;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 100;
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 55px;
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+  }
 `;
 
 const CreationsLinksMobile = styled.div`
@@ -169,17 +181,41 @@ const CreationsLinksDesktop = styled.div`
     bottom: 44px;
     left: 24px;
   }
+
   img {
     width: 255px;
-    filter: brightness(0.7);
+    filter: brightness(0.5);
     display: block;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
     position: relative;
   }
 
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-wrap: wrap;
+  }
+`;
+
+const ButtonMobileContainer = styled.div`
+  display: none;
+  justify-content: center;
+  margin-bottom: 95px;
+  @media screen and (max-width: 1439px) {
+    display: flex;
+  }
+`;
+
+const ButtonMobile = styled.button`
+  font-family: 'Alata', sans-serif;
+  text-transform: uppercase;
+  border: 1px solid ${black};
+  background: transparent;
+  padding: 10px 20px;
+  font-size: 16px;
+  letter-spacing: 5px;
+
+  &:hover {
+    cursor: pointer;
   }
 `;
 
@@ -205,7 +241,9 @@ const Main = () => {
           </Text>
         </Banner>
         <Creations>
-          <CreationsTitle>Our creations</CreationsTitle>
+          <CreationsTitleContainer>
+            <CreationsTitle>Our creations</CreationsTitle>
+          </CreationsTitleContainer>
           <CreationsLinksMobile>
             <div>
               <h3>Deep earth</h3>
@@ -259,6 +297,7 @@ const Main = () => {
           <CreationsLinksDesktop>
             <div>
               <h3>Deep earth</h3>
+
               <a href='/'>
                 <img src={deepEarthDesktop} alt='' />
               </a>
@@ -307,6 +346,9 @@ const Main = () => {
             </div>
           </CreationsLinksDesktop>
         </Creations>
+        <ButtonMobileContainer>
+          <ButtonMobile>See all</ButtonMobile>
+        </ButtonMobileContainer>
       </Contents>
     </MainContainer>
   );
