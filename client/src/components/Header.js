@@ -106,7 +106,8 @@ const NavMenu = styled.ul`
     height: 100vh;
     width: 100vw;
     background-color: black;
-    position: absolute;
+    position: fixed;
+    overflow: hidden;
     top: 0;
     left: 0;
     z-index: 0;
