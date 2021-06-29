@@ -104,7 +104,7 @@ const NavLogo = styled.div`
 const Burger = styled.button`
   background: transparent;
   border: none;
-  margin-right: ${(props) => (props.menuOpen ? '24px' : 'initial')};
+  margin-right: ${(props) => (props.menuOpen ? '36px' : 'initial')};
 
   :hover {
     cursor: pointer;
