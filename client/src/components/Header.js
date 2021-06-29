@@ -1,19 +1,19 @@
-import React, { useContext } from 'react';
-import styled from 'styled-components';
-import heroImageDesktop from '../images/desktop/image-hero.jpg';
-import heroImageMobile from '../images/mobile/image-hero.jpg';
-import navLogo from '../images/logo.svg';
+import React, { useContext } from "react";
+import styled from "styled-components";
+import heroImageDesktop from "../images/desktop/image-hero.jpg";
+import heroImageMobile from "../images/mobile/image-hero.jpg";
+import navLogo from "../images/logo.svg";
 
-import theme from '../theme';
+import theme from "../theme";
 
-import { MenuContext } from '../context/MenuContext';
+import { MenuContext } from "../context/MenuContext";
 
 const { white, black, darkGray, veryDarkGray } = theme;
 
 const HeaderContainer = styled.div`
   width: 100vw;
   height: 100%;
-  height: ${(props) => (props.menuOpen ? '0' : '650px')};
+  height: ${(props) => (props.menuOpen ? "0" : "650px")};
 `;
 
 const Hero = styled.div`
@@ -63,9 +63,23 @@ const NavBar = styled.div`
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    position: ${(props) => (props.menuOpen ? 'fixed' : 'none')};
-    width: ${(props) => (props.menuOpen ? '100vw' : 'initial')};
-    left: ${(props) => (props.menuOpen ? '0' : 'initial')};
+    /*     position: ${({ menuOpen }) => (menuOpen ? "fixed" : "none")};
+    width: ${({ menuOpen }) => (menuOpen ? "100vw" : "initial")};
+    left: ${({ menuOpen }) => (menuOpen ? "0" : "initial")}; */
+
+    /*     ${({ menuOpen }) => {
+      switch (menuOpen) {
+        case true:
+          return "position: fixed; width: 100vw; left: 0;";
+        default:
+          return "position: none; width: initial; left: initial;";
+      }
+    }} */
+
+    ${({ menuOpen }) =>
+      menuOpen
+        ? "position: fixed; width: 100vw; left: 0;"
+        : "position: none; width: initial; left: initial;"}
   }
 `;
 
@@ -77,7 +91,7 @@ const NavLogo = styled.div`
     height: 25px;
     width: 160px;
     background-size: 145px auto;
-    margin-left: ${(props) => (props.menuOpen ? '24px' : 'initial')};
+    margin-left: ${(props) => (props.menuOpen ? "24px" : "initial")};
   }
   @media screen and (min-width: 768px) {
     height: 35px;
@@ -89,7 +103,7 @@ const NavLogo = styled.div`
 const Burger = styled.button`
   background: transparent;
   border: none;
-  margin-right: ${(props) => (props.menuOpen ? '24px' : 'initial')};
+  margin-right: ${(props) => (props.menuOpen ? "24px" : "initial")};
 
   :hover {
     cursor: pointer;
@@ -108,7 +122,7 @@ const NavMenu = styled.ul`
     color: white;
   }
   @media screen and (max-width: 767px) {
-    display: ${(props) => (props.menuOpen ? 'flex' : 'none')};
+    display: ${(props) => (props.menuOpen ? "flex" : "none")};
     height: 100vh;
     width: 100vw;
     background-color: black;
@@ -120,7 +134,7 @@ const NavMenu = styled.ul`
     justify-content: center;
     padding-left: 24px;
     font-weight: 400;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 24px;
     font-weight: 100;
 
@@ -139,7 +153,7 @@ const NavMenu = styled.ul`
 const HeroText = styled.div`
   color: white;
   text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 100;
   font-size: 40px;
   padding: 22px;

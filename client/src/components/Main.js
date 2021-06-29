@@ -1,35 +1,35 @@
-import React, { useContext } from 'react';
-import styled from 'styled-components';
-import theme from '../theme';
+import React, { useContext } from "react";
+import styled from "styled-components";
+import theme from "../theme";
 
-import bannerImageMobile from '../images/mobile/image-interactive.jpg';
+import bannerImageMobile from "../images/mobile/image-interactive.jpg";
 
-import deepEarthMobile from '../images/mobile/image-deep-earth.jpg';
-import nightArcadeMobile from '../images/mobile/image-night-arcade.jpg';
-import soccerTeamMobile from '../images/mobile/image-soccer-team.jpg';
-import theGridMobile from '../images/mobile/image-grid.jpg';
-import fromAboveMobile from '../images/mobile/image-from-above.jpg';
-import pocketBorealisMobile from '../images/mobile/image-pocket-borealis.jpg';
-import curiosityMobile from '../images/mobile/image-curiosity.jpg';
-import fisheyeMobile from '../images/mobile/image-fisheye.jpg';
+import deepEarthMobile from "../images/mobile/image-deep-earth.jpg";
+import nightArcadeMobile from "../images/mobile/image-night-arcade.jpg";
+import soccerTeamMobile from "../images/mobile/image-soccer-team.jpg";
+import theGridMobile from "../images/mobile/image-grid.jpg";
+import fromAboveMobile from "../images/mobile/image-from-above.jpg";
+import pocketBorealisMobile from "../images/mobile/image-pocket-borealis.jpg";
+import curiosityMobile from "../images/mobile/image-curiosity.jpg";
+import fisheyeMobile from "../images/mobile/image-fisheye.jpg";
 
-import bannerImageDesktop from '../images/desktop/image-interactive.jpg';
+import bannerImageDesktop from "../images/desktop/image-interactive.jpg";
 
-import deepEarthDesktop from '../images/desktop/image-deep-earth.jpg';
-import nightArcadeDesktop from '../images/desktop/image-night-arcade.jpg';
-import soccerTeamDesktop from '../images/desktop/image-soccer-team.jpg';
-import theGridDesktop from '../images/desktop/image-grid.jpg';
-import fromAboveDesktop from '../images/desktop/image-from-above.jpg';
-import pocketBorealisDesktop from '../images/desktop/image-pocket-borealis.jpg';
-import curiosityDesktop from '../images/desktop/image-curiosity.jpg';
-import fisheyeDesktop from '../images/desktop/image-fisheye.jpg';
+import deepEarthDesktop from "../images/desktop/image-deep-earth.jpg";
+import nightArcadeDesktop from "../images/desktop/image-night-arcade.jpg";
+import soccerTeamDesktop from "../images/desktop/image-soccer-team.jpg";
+import theGridDesktop from "../images/desktop/image-grid.jpg";
+import fromAboveDesktop from "../images/desktop/image-from-above.jpg";
+import pocketBorealisDesktop from "../images/desktop/image-pocket-borealis.jpg";
+import curiosityDesktop from "../images/desktop/image-curiosity.jpg";
+import fisheyeDesktop from "../images/desktop/image-fisheye.jpg";
 
-import { MenuContext } from '../context/MenuContext';
+import { MenuContext } from "../context/MenuContext";
 
 const { white, black, darkGray, veryDarkGray } = theme;
 
 const MainContainer = styled.div`
-  display: ${(props) => (props.menuOpen ? 'none' : 'block')};
+  display: ${(props) => (props.menuOpen ? "none" : "block")};
   @media screen and (max-width: 1023px) {
     padding: 180px 24px 0 24px;
   }
@@ -88,7 +88,7 @@ const Text = styled.div`
 const Title = styled.div`
   color: ${black};
   text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 100;
   font-size: 40px;
   margin-bottom: 30px;
@@ -116,18 +116,26 @@ const Creations = styled.div`
   }
 `;
 
-const CreationsTitleContainer = styled.div``;
+const CreationsTitleContainer = styled.div`
+  height: 100%;
+  margin-bottom: 55px;
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+`;
 
 const CreationsTitle = styled.div`
   text-align: center;
   color: ${black};
   text-transform: uppercase;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 100;
   font-size: 40px;
-  margin-bottom: 55px;
   @media screen and (min-width: 1440px) {
     font-size: 48px;
+    height: 48px;
   }
 `;
 
@@ -142,7 +150,7 @@ const CreationsLinksMobile = styled.div`
     color: ${white};
     text-transform: uppercase;
     position: absolute;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-weight: 100;
     font-size: 24px;
     width: 140px;
@@ -165,6 +173,8 @@ const CreationsLinksMobile = styled.div`
 const CreationsLinksDesktop = styled.div`
   display: none;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 161px;
   div {
     position: relative;
   }
@@ -173,7 +183,7 @@ const CreationsLinksDesktop = styled.div`
     color: ${white};
     text-transform: uppercase;
     position: absolute;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-weight: 100;
     font-size: 24px;
     width: 140px;
@@ -192,7 +202,6 @@ const CreationsLinksDesktop = styled.div`
 
   @media screen and (min-width: 1440px) {
     display: flex;
-    flex-wrap: wrap;
   }
 `;
 
@@ -206,11 +215,11 @@ const ButtonMobileContainer = styled.div`
 `;
 
 const ButtonMobile = styled.button`
-  font-family: 'Alata', sans-serif;
+  font-family: "Alata", sans-serif;
   text-transform: uppercase;
   border: 1px solid ${black};
   background: transparent;
-  padding: 10px 20px;
+  padding: 10px 40px;
   font-size: 16px;
   letter-spacing: 5px;
 
@@ -219,8 +228,17 @@ const ButtonMobile = styled.button`
   }
 `;
 
+const ButtonDesktopContainer = styled.div`
+  display: none;
+  @media screen and (min-width: 1440px) {
+    display: initial;
+  }
+`;
+
+const ButtonDesktop = styled(ButtonMobile)``;
+
 const Main = () => {
-  const { menuOpen, setMenuOpen } = useContext(MenuContext);
+  const { menuOpen } = useContext(MenuContext);
 
   return (
     <MainContainer menuOpen={menuOpen}>
@@ -243,6 +261,9 @@ const Main = () => {
         <Creations>
           <CreationsTitleContainer>
             <CreationsTitle>Our creations</CreationsTitle>
+            <ButtonDesktopContainer>
+              <ButtonDesktop>See all</ButtonDesktop>
+            </ButtonDesktopContainer>
           </CreationsTitleContainer>
           <CreationsLinksMobile>
             <div>
