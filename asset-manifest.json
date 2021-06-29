@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/loopstudios-landing-page-main/static/css/main.aa82081c.chunk.css",
-    "main.js": "/loopstudios-landing-page-main/static/js/main.be7047d7.chunk.js",
-    "main.js.map": "/loopstudios-landing-page-main/static/js/main.be7047d7.chunk.js.map",
+    "main.css": "/loopstudios-landing-page-main/static/css/main.7a700447.chunk.css",
+    "main.js": "/loopstudios-landing-page-main/static/js/main.0884a511.chunk.js",
+    "main.js.map": "/loopstudios-landing-page-main/static/js/main.0884a511.chunk.js.map",
     "runtime-main.js": "/loopstudios-landing-page-main/static/js/runtime-main.2b2a9222.js",
     "runtime-main.js.map": "/loopstudios-landing-page-main/static/js/runtime-main.2b2a9222.js.map",
     "static/js/2.afa0c7bb.chunk.js": "/loopstudios-landing-page-main/static/js/2.afa0c7bb.chunk.js",
     "static/js/2.afa0c7bb.chunk.js.map": "/loopstudios-landing-page-main/static/js/2.afa0c7bb.chunk.js.map",
     "index.html": "/loopstudios-landing-page-main/index.html",
-    "static/css/main.aa82081c.chunk.css.map": "/loopstudios-landing-page-main/static/css/main.aa82081c.chunk.css.map",
+    "static/css/main.7a700447.chunk.css.map": "/loopstudios-landing-page-main/static/css/main.7a700447.chunk.css.map",
     "static/js/2.afa0c7bb.chunk.js.LICENSE.txt": "/loopstudios-landing-page-main/static/js/2.afa0c7bb.chunk.js.LICENSE.txt",
     "static/media/image-curiosity.40d51f38.jpg": "/loopstudios-landing-page-main/static/media/image-curiosity.40d51f38.jpg",
     "static/media/image-curiosity.7f14665a.jpg": "/loopstudios-landing-page-main/static/media/image-curiosity.7f14665a.jpg",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.2b2a9222.js",
     "static/js/2.afa0c7bb.chunk.js",
-    "static/css/main.aa82081c.chunk.css",
-    "static/js/main.be7047d7.chunk.js"
+    "static/css/main.7a700447.chunk.css",
+    "static/js/main.0884a511.chunk.js"
   ]
 }
