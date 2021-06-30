@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/react-styledcomponents-mobile-first-rWtOdDpld](https://www.frontendmentor.io/solutions/react-styledcomponents-mobile-first-rWtOdDpld)
 - Live Site URL: [https://michaelrlai88.github.io/loopstudios-landing-page-main/](https://michaelrlai88.github.io/loopstudios-landing-page-main/)
 
 ## My process
