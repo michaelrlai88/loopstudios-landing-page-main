@@ -152,9 +152,7 @@ const CreationsLinksMobile = styled.div`
       color: ${black};
     }
     img {
-       {
-        filter: opacity(0.2);
-      }
+      filter: opacity(0.2);
     }
   }
 
@@ -197,9 +195,7 @@ const CreationsLinksDesktop = styled.div`
       color: ${black};
     }
     img {
-       {
-        filter: opacity(0.2);
-      }
+      filter: opacity(0.2);
     }
   }
 
@@ -271,8 +267,8 @@ const Main = () => {
       <Contents>
         <Banner>
           <BannerImageContainer>
-            <BannerImageMobile src={bannerImageMobile} />
-            <BannerImageDesktop src={bannerImageDesktop} />
+            <BannerImageMobile src={bannerImageMobile} alt='' />
+            <BannerImageDesktop src={bannerImageDesktop} alt='' />
           </BannerImageContainer>
           <Text>
             <Title>The leader in interactive VR</Title>
