@@ -297,49 +297,49 @@ const Main = () => {
             <div>
               <a href='/'>
                 <h3>Deep earth</h3>
-                <img src={deepEarthMobile} alt='' />
+                <img src={deepEarthMobile} alt='deepearth' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>Night arcade</h3>
-                <img src={nightArcadeMobile} alt='' />
+                <img src={nightArcadeMobile} alt='nightarcade' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>Soccer team vr</h3>
-                <img src={soccerTeamMobile} alt='' />
+                <img src={soccerTeamMobile} alt='soccerteam' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>The grid</h3>
-                <img src={theGridMobile} alt='' />
+                <img src={theGridMobile} alt='thegrid' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>From up above vr</h3>
-                <img src={fromAboveMobile} alt='' />
+                <img src={fromAboveMobile} alt='fromabove' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>Pocket borealis</h3>
-                <img src={pocketBorealisMobile} alt='' />
+                <img src={pocketBorealisMobile} alt='pocketborealis' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>The curiosity</h3>
-                <img src={curiosityMobile} alt='' />
+                <img src={curiosityMobile} alt='curiosity' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>Make it fisheye</h3>
-                <img src={fisheyeMobile} alt='' />
+                <img src={fisheyeMobile} alt='fisheye' />
               </a>
             </div>
           </CreationsLinksMobile>
@@ -347,49 +347,49 @@ const Main = () => {
             <div>
               <a href='/'>
                 <h3>Deep earth</h3>
-                <img src={deepEarthDesktop} alt='' />
+                <img src={deepEarthDesktop} alt='deepearth' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>Night arcade</h3>
-                <img src={nightArcadeDesktop} alt='' />
+                <img src={nightArcadeDesktop} alt='nightarcade' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>Soccer team vr</h3>
-                <img src={soccerTeamDesktop} alt='' />
+                <img src={soccerTeamDesktop} alt='soccerteam' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>The grid</h3>
-                <img src={theGridDesktop} alt='' />
+                <img src={theGridDesktop} alt='thegrid' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>From up above vr</h3>
-                <img src={fromAboveDesktop} alt='' />
+                <img src={fromAboveDesktop} alt='fromabove' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>Pocket borealis</h3>
-                <img src={pocketBorealisDesktop} alt='' />
+                <img src={pocketBorealisDesktop} alt='pocketborealis' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>The curiosity</h3>
-                <img src={curiosityDesktop} alt='' />
+                <img src={curiosityDesktop} alt='curiosity' />
               </a>
             </div>
             <div>
               <a href='/'>
                 <h3>Make it fisheye</h3>
-                <img src={fisheyeDesktop} alt='' />
+                <img src={fisheyeDesktop} alt='fisheye' />
               </a>
             </div>
           </CreationsLinksDesktop>
