@@ -267,8 +267,14 @@ const Main = () => {
       <Contents>
         <Banner>
           <BannerImageContainer>
-            <BannerImageMobile src={bannerImageMobile} alt='' />
-            <BannerImageDesktop src={bannerImageDesktop} alt='' />
+            <BannerImageMobile
+              src={bannerImageMobile}
+              alt='bannerimagemobile'
+            />
+            <BannerImageDesktop
+              src={bannerImageDesktop}
+              alt='bannerimagedesktop'
+            />
           </BannerImageContainer>
           <Text>
             <Title>The leader in interactive VR</Title>
